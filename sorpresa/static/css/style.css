@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 24px;
+  display: grid;
+  place-items: center;
+  font-family: system-ui, sans-serif;
+  color: #482f3a;
+  background: linear-gradient(135deg, #ffe1e8, #fff4dc);
+}
+
+.tarjeta {
+  width: min(100%, 560px);
+  padding: clamp(24px, 6vw, 48px);
+  text-align: center;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 16px 50px rgb(72 47 58 / 14%);
+}
+
+.etiqueta {
+  color: #a84e70;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+}
+
+h1 {
+  margin: 12px 0;
+  font-size: clamp(2rem, 8vw, 3.5rem);
+}
+
+.intro,
+.sorpresa p {
+  line-height: 1.7;
+}
+
+button {
+  margin-top: 16px;
+  padding: 14px 22px;
+  border: 0;
+  border-radius: 999px;
+  color: #fff;
+  background: #b84f77;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #963c60;
+}
+
+button:focus-visible {
+  outline: 3px solid #482f3a;
+  outline-offset: 4px;
+}
+
+.sorpresa {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid #f1dce4;
+}
+
+.sorpresa h2 {
+  color: #a33f68;
+}
+
+.firma {
+  font-weight: 700;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 16px;
+  }
+
+  .tarjeta {
+    border-radius: 18px;
+  }
+}

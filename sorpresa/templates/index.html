@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Una sorpresa para ti</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <main class="tarjeta">
+    <p class="etiqueta">Tengo algo para ti</p>
+    <h1>Hola, mi amor 💛</h1>
+    <p class="intro">Preparé una pequeña sorpresa. ¿Quieres verla?</p>
+
+    <button id="boton-sorpresa" type="button" aria-expanded="false">
+      Abrir mi sorpresa
+    </button>
+
+    <section id="sorpresa" class="sorpresa" hidden aria-live="polite">
+      <h2>¡Te quiero mucho! 🌷</h2>
+      <p>
+        Gracias por llenar mis días de alegría. Me encanta compartir
+        momentos contigo y espero que esta sorpresa te saque una sonrisa.
+      </p>
+      <p class="firma">Con cariño, [tu nombre]</p>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

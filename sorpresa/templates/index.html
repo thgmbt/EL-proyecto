@@ -4,14 +4,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Una sorpresa para ti</title>
+  <title>Para mi amorcito</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
   <main class="tarjeta">
+    <nav class="barra-navegacion" aria-label="Navegación principal">
+      <a href="{{ url_for('inicio') }}">Inicio</a>
+      <a href="{{ url_for('por_definir') }}">Por definir</a>
+    </nav>
+
     <p class="etiqueta">Tengo algo para ti</p>
-    <h1>Hola, {{nombre}} 💛</h1>
+    <h1>Hola, {{nombre}} 💜</h1>
     <p class="intro">Preparé una pequeña sorpresa. ¿Quieres verla?</p>
 
     <button id="boton-sorpresa" type="button" aria-expanded="false">
@@ -19,7 +24,7 @@
     </button>
 
     <section id="sorpresa" class="sorpresa" hidden aria-live="polite">
-      <h2>No sabes cuánto te amo, mi Karlita🌷</h2>
+      <h2>No sabes cuánto te amo, {{nombre}} 🌷</h2>
       <p>
         {{mensaje}}
       </p>

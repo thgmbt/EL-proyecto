@@ -15,5 +15,10 @@ def inicio():
     )
 
 
+@app.route("/por-definir")
+def por_definir():
+    return render_template("por-definir.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)

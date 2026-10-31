@@ -15,9 +15,9 @@ def inicio():
     )
 
 
-@app.route("/por-definir")
-def por_definir():
-    return render_template("por-definir.html")
+@app.route("/otras-cositas")
+def otras_cositas():
+    return render_template("otras-cositas.html")
 
 
 if __name__ == "__main__":

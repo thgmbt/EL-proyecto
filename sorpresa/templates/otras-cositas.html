@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Otras cositas</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+
+  <body>
+    <main class="tarjeta pagina-galeria">
+      <nav class="barra-navegacion" aria-label="Navegación principal">
+        <a href="{{ url_for('inicio') }}">Inicio</a>
+        <a href="{{ url_for('otras_cositas') }}" aria-current="page"
+          >Otras cositas</a
+        >
+      </nav>
+
+      <p class="etiqueta">Un año hermoso lleno de cosas pequeñas</p>
+      <h1>Así se ve 💜</h1>
+      <p class="intro">
+        Un presente contigo y un futuro brillante a tu lado, mi amorcito.
+      </p>
+
+      <section class="galeria-parejas" aria-label="Galería de Mamorshito">
+        <figure class="foto-pareja">
+          <img
+            src="{{ url_for('static', filename='img/foto1.jpg') }}"
+            alt="Mi consentida ❤️"
+            loading="lazy"
+          />
+          <figcaption>Mi consentida</figcaption>
+        </figure>
+        <figure class="foto-pareja">
+          <img
+            src="{{ url_for('static', filename='img/foto2.jpg') }}"
+            alt="Mi bella posando"
+            loading="lazy"
+          />
+          <figcaption>Mi niña hermosa</figcaption>
+        </figure>
+        <figure class="foto-pareja">
+          <img
+            src="{{ url_for('static', filename='img/foto4.jpg') }}"
+            alt="Bella. Guapa. Hermosa."
+            loading="lazy"
+          />
+          <figcaption>
+            Pero sobre todo
+            <a
+              href="https://open.spotify.com/intl-es/track/0ILCaNMr4s5CZdF1Km09Ln"
+              >My One and Only Love</a
+            >
+          </figcaption>
+        </figure>
+      </section>
+    </main>
+  </body>
+</html>

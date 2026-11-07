@@ -20,5 +20,10 @@ def otras_cositas():
     return render_template("otras-cositas.html")
 
 
+@app.route("/teamo")
+def teamo():
+    return render_template("teamo.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)

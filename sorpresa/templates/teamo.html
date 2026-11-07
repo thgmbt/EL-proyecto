@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Te amo</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+
+  <body>
+    <main class="tarjeta">
+      <nav class="barra-navegacion" aria-label="Navegación principal">
+        <a href="{{ url_for('inicio') }}">Inicio</a>
+        <a href="{{ url_for('otras_cositas') }}">Otras cositas</a>
+      </nav>
+
+      <p class="intro">
+        Créeme que voy a hacer todo lo posible para que seas feliz. Te amo 3
+        millones, Karlita. Sin importar qué.
+      </p>
+    </main>
+  </body>
+</html>

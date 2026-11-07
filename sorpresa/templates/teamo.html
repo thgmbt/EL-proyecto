@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Te amo</title>
     <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/favicon.png') }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css') }}"
@@ -22,6 +28,16 @@
         Créeme que voy a hacer todo lo posible para que seas feliz. Te amo 3
         millones, Karlita. Sin importar qué.
       </p>
+      <a
+        class="imagen-spotify"
+        href="https://open.spotify.com/intl-es/track/0gWbAFRcUyZKdfUxEOuOiD?si=9ccfdfe570b14056"
+        aria-label="Escuchar la canción en Spotify"
+      >
+        <img
+          src="{{ url_for('static', filename='img/gato.jpg') }}"
+          alt="Un gatito sostiene un corazón rosa"
+        />
+      </a>
     </main>
   </body>
 </html>

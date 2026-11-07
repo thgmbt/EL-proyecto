@@ -14,7 +14,6 @@ def inicio():
         "Y bueno, sé que esta es una pregunta que esperas de hace un tiempo jeje. ¿Quieres ser mi novia?"
     )
 
-
 @app.route("/otras-cositas")
 def otras_cositas():
     return render_template("otras-cositas.html")

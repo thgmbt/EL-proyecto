@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: el-proyecto
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --chdir sorpresa app:app
